@@ -1,0 +1,30 @@
+# 
+#[backgroundNoise]
+# hasBgNoiseDetectionApplied = True
+# windowBackgroundValues = (1000,200)
+# windowWidthBackgroundUnits = Points
+# windowNoiseValues = (1000,500)
+# windowWidthNoiseUnits = Points
+#[peakDetection]
+# hasPeakIDApplied = True
+# peakWidthValues = (1000,6.0)
+# peakWidthUnits = Points
+# signalNoiseRatio = 4.0
+# reduceSensitivityAtLowMZ = True
+# chemicalNoiseSuppressionOn = True
+# chemicalNoiseFactor = 1.5 
+#[calibration]
+# hasCalibrationApplied = True
+# calibrationTolerance = 250.00
+# calibrationToleranceUnits = Ppm
+# calibrationUseQuadratic = False
+# calibrationMonoisotopicOnly = True
+# calibrationRangeOfInterestMin = 400.0
+# calibrationRangeOfInterestMax = 2250
+# useDefaultCalibrationListFile = False
+#        mz         Amplitude 
+       926.5939     7034.739 
+       948.5845      794.379 
+      1022.3134      317.471 
+      1038.7058     7057.145 
+      1060.6831      862.367 
