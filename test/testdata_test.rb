@@ -8,7 +8,7 @@ class TestdataTest < Test::Unit::TestCase
   def test_dereference
     source_dir = File.expand_path("#{File.dirname(__FILE__)}/testdata")
     ref_document = "#{Ms::TESTDATA}/test/document.txt"
-    doc_a = "#{source_dir}/document.txt"
+    doc_a = "#{source_dir}/test/document.txt"
     doc_b = "#{source_dir}/name.txt"
     
     document = File.read(ref_document)
