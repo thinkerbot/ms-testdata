@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'tap/test'
+require 'tap/test/utils'
 require 'ms/testdata'
 
 class TestdataTest < Test::Unit::TestCase
