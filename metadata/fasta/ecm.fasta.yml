@@ -1,0 +1,5 @@
+source: Simon Chiang
+description: |
+  A small set of common, human ECM proteins (TG2, collagen,
+  laminin,  nidogen, fibronectin, integrin, plus albumin)
+  in FASTA format.  Entries from UniProt.
