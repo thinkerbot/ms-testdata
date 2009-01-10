@@ -7,10 +7,8 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "A repository of test data used by the mspire libraries."
   s.require_path = "lib"
-  #s.test_file = "test/tap_test_suite.rb"
   s.rubyforge_project = "mspire"
-  #s.has_rdoc = true
-  s.add_dependency("tap", "~> 0.11")
+  s.add_dependency("tap", ">= 0.12.0")
   
   # list extra rdoc files like README here.
   s.extra_rdoc_files = %W{
