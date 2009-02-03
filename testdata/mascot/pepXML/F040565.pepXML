@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msms_pipeline_analysis xmlns="http://regis-web.systemsbiology.net/pepXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://regis-web.systemsbiology.net/pepXML http://bluemoon.colorado.edu/mascot/xmlns/schema/pepXML_v18/pepXML_v18.xsd" date="2009-01-23T22:47:16Z" summary_xml="F040565.xml">
+<msms_run_summary base_name="" raw_data_type="" raw_data="">
+<sample_enzyme name="Trypsin" description="" fidelity="specific" independent="0">
+<specificity sense="C" min_spacing="1" cut="KR" no_cut="P"/>
+</sample_enzyme>
+<search_summary base_name="http://bluemoon.colorado.edu/mascot/cgi/master_results.pl?file=../data/20090121/F040565.dat" search_engine="MASCOT" precursor_mass_type="monoisotopic" fragment_mass_type="monoisotopic" out_data_type="" out_data="" search_id="1">
+<search_database local_path="/data/mascot/sequence/ipi_HUMAN_v3_27/current/ipi_HUMAN_v3_27.fasta" database_name="ipi_HUMAN_v3_27" database_release_identifier="ipi_HUMAN_v3_27.fasta" size_in_db_entries="67528" size_of_residues="28353548" type="AA"/>
+<enzymatic_search_constraint enzyme="Trypsin" max_num_internal_cleavages="2" min_number_termini="2"/>
+<aminoacid_modification aminoacid="C" massdiff="+57.0215" mass="160.030649" variable="Y" binary="N" description="Carbamidomethyl (C)"/>
+<aminoacid_modification aminoacid="M" massdiff="+15.9949" mass="147.0354" variable="Y" binary="N" description="Oxidation (M)"/>
+<parameter name="CHARGE" value="2+ and 3+"/>
+<parameter name="CLE" value="Trypsin"/>
+<parameter name="COM" value="by pm3-mni-again on NOKONI"/>
+<parameter name="DB" value="ipi_HUMAN_v3_27"/>
+<parameter name="DECOY" value="1"/>
+<parameter name="FILE" value="D:\jtprince\MS_workflow\mgfs\PM3mini.mgf"/>
+<parameter name="FORMAT" value="Mascot generic"/>
+<parameter name="FORMVER" value="1.01"/>
+<parameter name="INSTRUMENT" value="ESI-TRAP"/>
+<parameter name="INTERNALS" value="0.0,700.0"/>
+<parameter name="ITOL" value="0.8"/>
+<parameter name="ITOLU" value="Da"/>
+<parameter name="IT_MODS" value="Carbamidomethyl (C),Oxidation (M)"/>
+<parameter name="LICENSE" value="Licensed to: HHMI / University of Colorado, Chem and Biochem. (041U000579), (1 processor)."/>
+<parameter name="MASS" value="Monoisotopic"/>
+<parameter name="PEP_ISOTOPE_ERROR" value="1"/>
+<parameter name="PFA" value="2"/>
+<parameter name="REPORT" value="AUTO"/>
+<parameter name="RULES" value="1,2,8,9,10,13,14,15"/>
+<parameter name="SEARCH" value="MIS"/>
+<parameter name="TAXONOMY" value="All entries"/>
+<parameter name="TOL" value="100"/>
+<parameter name="TOLU" value="ppm"/>
+<parameter name="USERNAME" value="jtprince"/>
+</search_summary>
+<spectrum_query spectrum="JP_PM3_0113_10ul_orb1.5369.5369.1.dta" start_scan="0" end_scan="0" precursor_neutral_mass="360.001144" assumed_charge="1" index="1"/>
+<spectrum_query spectrum="JP_PM3_0113_10ul_orb1.1233.1233.2.dta" start_scan="0" end_scan="0" precursor_neutral_mass="936.456448" assumed_charge="2" index="2">
+<search_result search_id="1">
+<search_hit hit_rank="1" peptide="GYASPDLSK" peptide_prev_aa="R" peptide_next_aa="L" protein="IPI00021786" num_tot_proteins="2" num_matched_ions="4" calc_neutral_pep_mass="936.455246" massdiff="+0.0012" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=RAF1 RAF proto-oncogene serine/threonine-protein kinase" protein_mw="73005">
+<alternative_protein protein="IPI00788857" protein_descr="Tax_Id=9606 Gene_Symbol=RAF1 16 kDa protein" protein_mw="15573"/>
+<search_score name="ionscore" value="22.56"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="1.9"/>
+</search_hit>
+<search_hit hit_rank="2" peptide="GSFSLLWK" peptide_prev_aa="R" peptide_next_aa="G" protein="IPI00397474" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.506897" massdiff="-0.0504" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=ESPL1 Isoform 1 of Separin" protein_mw="232966">
+<search_score name="ionscore" value="11.79"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="22"/>
+</search_hit>
+<search_hit hit_rank="3" peptide="KYSGKNLK" peptide_prev_aa="K" peptide_next_aa="R" protein="IPI00289929" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.53923" massdiff="-0.0828" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=ACRC Acidic repeat-containing protein" protein_mw="76066">
+<search_score name="ionscore" value="10.44"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="31"/>
+</search_hit>
+<search_hit hit_rank="4" peptide="KYCNPKK" peptide_prev_aa="K" peptide_next_aa="I" protein="IPI00479912" num_tot_proteins="7" num_matched_ions="4" calc_neutral_pep_mass="936.485092" massdiff="-0.0286" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 1 of PX domain-containing protein kinase-like protein" protein_mw="64909">
+<alternative_protein protein="IPI00556666" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 7 of PX domain-containing protein kinase-like protein" protein_mw="55727"/>
+<alternative_protein protein="IPI00654715" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 4 of PX domain-containing protein kinase-like protein" protein_mw="62851"/>
+<alternative_protein protein="IPI00655529" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 6 of PX domain-containing protein kinase-like protein" protein_mw="60917"/>
+<alternative_protein protein="IPI00655607" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Phox-like domain containing protein" protein_mw="63712"/>
+<alternative_protein protein="IPI00655666" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 5 of PX domain-containing protein kinase-like protein" protein_mw="49460"/>
+<alternative_protein protein="IPI00656013" protein_descr="Tax_Id=9606 Gene_Symbol=PXK Isoform 3 of PX domain-containing protein kinase-like protein" protein_mw="38850"/>
+<modification_info>
+<mod_aminoacid_mass position="3" mass="160.030654"/>
+</modification_info>
+<search_score name="ionscore" value="8.88"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="44"/>
+</search_hit>
+<search_hit hit_rank="5" peptide="RSSMESPK" peptide_prev_aa="R" peptide_next_aa="S" protein="IPI00328089" num_tot_proteins="2" num_matched_ions="2" calc_neutral_pep_mass="936.433456" massdiff="+0.0230" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=HIVEP3 Kappa B and V(D)J recombination signal sequences binding protein" protein_mw="259176">
+<alternative_protein protein="IPI00641105" protein_descr="Tax_Id=9606 Gene_Symbol=HIVEP3 human immunodeficiency virus type I enhancer binding protein 3" protein_mw="259304"/>
+<modification_info>
+<mod_aminoacid_mass position="4" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="7.14"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="65"/>
+</search_hit>
+<search_hit hit_rank="6" peptide="RSSMRER" peptide_prev_aa="R" peptide_next_aa="V" protein="IPI00445004" num_tot_proteins="1" num_matched_ions="2" calc_neutral_pep_mass="936.455917" massdiff="+0.0005" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=LOC619207 CDNA FLJ44759 fis, clone BRACE3031372" protein_mw="30087">
+<modification_info>
+<mod_aminoacid_mass position="4" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="7.14"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="65"/>
+</search_hit>
+<search_hit hit_rank="7" peptide="NCPGHPAGK" peptide_prev_aa="R" peptide_next_aa="W" protein="IPI00445701" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.423584" massdiff="+0.0329" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=- CDNA FLJ43527 fis, clone PLACE6009006" protein_mw="18460">
+<modification_info>
+<mod_aminoacid_mass position="2" mass="160.030654"/>
+</modification_info>
+<search_score name="ionscore" value="6.45"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="77"/>
+</search_hit>
+<search_hit hit_rank="8" peptide="TFQMVAPK" peptide_prev_aa="K" peptide_next_aa="K" protein="IPI00030020" num_tot_proteins="1" num_matched_ions="2" calc_neutral_pep_mass="936.473892" massdiff="-0.0174" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=OPLAH Hypothetical protein" protein_mw="37244">
+<modification_info>
+<mod_aminoacid_mass position="4" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="5.84"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="88"/>
+</search_hit>
+<search_hit hit_rank="9" peptide="KYNTFHK" peptide_prev_aa="R" peptide_next_aa="N" protein="IPI00250716" num_tot_proteins="3" num_matched_ions="4" calc_neutral_pep_mass="936.481735" massdiff="-0.0253" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=BRWD1 Isoform B of Bromodomain and WD repeat domain-containing protein 1" protein_mw="257062">
+<alternative_protein protein="IPI00289944" protein_descr="Tax_Id=9606 Gene_Symbol=BRWD1 Isoform A of Bromodomain and WD repeat domain-containing protein 1" protein_mw="262756"/>
+<alternative_protein protein="IPI00746752" protein_descr="Tax_Id=9606 Gene_Symbol=BRWD1 Isoform C of Bromodomain and WD repeat domain-containing protein 1" protein_mw="248782"/>
+<search_score name="ionscore" value="5.59"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="93"/>
+</search_hit>
+<search_hit hit_rank="10" peptide="KRSGMACK" peptide_prev_aa="R" peptide_next_aa="T" protein="IPI00455843" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.463318" massdiff="-0.0069" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=REXO1L7P similar to transcription elongation factor B polypeptide 3 binding protein 1" protein_mw="63920">
+<modification_info>
+<mod_aminoacid_mass position="7" mass="160.030654"/>
+</modification_info>
+<search_score name="ionscore" value="5.53"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="26"/>
+<search_score name="expect" value="95"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query spectrum="JP_PM3_0113_10ul_orb1.1254.1254.1.dta" start_scan="0" end_scan="0" precursor_neutral_mass="936.458604" assumed_charge="1" index="3">
+<search_result search_id="1">
+<search_hit hit_rank="1" peptide="GYASPDLSK" peptide_prev_aa="R" peptide_next_aa="L" protein="IPI00021786" num_tot_proteins="2" num_matched_ions="8" calc_neutral_pep_mass="936.455246" massdiff="+0.0034" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=RAF1 RAF proto-oncogene serine/threonine-protein kinase" protein_mw="73005">
+<alternative_protein protein="IPI00788857" protein_descr="Tax_Id=9606 Gene_Symbol=RAF1 16 kDa protein" protein_mw="15573"/>
+<search_score name="ionscore" value="21.43"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="2.5"/>
+</search_hit>
+<search_hit hit_rank="2" peptide="DCLVQECK" peptide_prev_aa="K" peptide_next_aa="D" protein="IPI00003293" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.40448" massdiff="+0.0541" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=DGKE Diacylglycerol kinase epsilon" protein_mw="63885">
+<search_score name="ionscore" value="6.93"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="69"/>
+</search_hit>
+<search_hit hit_rank="3" peptide="DLTTQCEK" peptide_prev_aa="R" peptide_next_aa="M" protein="IPI00646000" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.422241" massdiff="+0.0364" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=FLJ44968 hypothetical protein LOC374887" protein_mw="32565">
+<search_score name="ionscore" value="6.93"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="69"/>
+</search_hit>
+<search_hit hit_rank="4" peptide="DWEKCEK" peptide_prev_aa="K" peptide_next_aa="G" protein="IPI00247295" num_tot_proteins="7" num_matched_ions="3" calc_neutral_pep_mass="936.401093" massdiff="+0.0575" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 Isoform 4 of Nesprin-1" protein_mw="1004568">
+<alternative_protein protein="IPI00247297" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 Isoform 6 of Nesprin-1" protein_mw="1004576"/>
+<alternative_protein protein="IPI00386444" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 Isoform 1 of Nesprin-1" protein_mw="1010412"/>
+<alternative_protein protein="IPI00394892" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 Isoform 8 of Nesprin-1" protein_mw="367600"/>
+<alternative_protein protein="IPI00551006" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 Isoform 2 of Nesprin-1" protein_mw="380079"/>
+<alternative_protein protein="IPI00745471" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 OTTHUMP00000017444" protein_mw="966061"/>
+<alternative_protein protein="IPI00749005" protein_descr="Tax_Id=9606 Gene_Symbol=SYNE1 1011 kDa protein" protein_mw="1010420"/>
+<search_score name="ionscore" value="6.93"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="69"/>
+</search_hit>
+<search_hit hit_rank="5" peptide="STLEKCEK" peptide_prev_aa="K" peptide_next_aa="V" protein="IPI00293604" num_tot_proteins="2" num_matched_ions="3" calc_neutral_pep_mass="936.458603" massdiff="+0.0000" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=TRIM39 Isoform 2 of Tripartite motif-containing protein 39" protein_mw="56339">
+<alternative_protein protein="IPI00798001" protein_descr="Tax_Id=9606 Gene_Symbol=TRIM39 Tripartite motif-containing 39" protein_mw="26420"/>
+<search_score name="ionscore" value="6.93"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="69"/>
+</search_hit>
+<search_hit hit_rank="6" peptide="NAVQQLHK" peptide_prev_aa="K" peptide_next_aa="E" protein="IPI00470582" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.514099" massdiff="-0.0555" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=C10orf118 Isoform 1 of Uncharacterized protein C10orf118" protein_mw="103623">
+<search_score name="ionscore" value="5.62"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="93"/>
+</search_hit>
+<search_hit hit_rank="7" peptide="MLLCQSAR" peptide_prev_aa="-" peptide_next_aa="M" protein="IPI00798289" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.452087" massdiff="+0.0065" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=- 5 kDa protein" protein_mw="5353">
+<modification_info>
+<mod_aminoacid_mass position="1" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="5.6"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="94"/>
+</search_hit>
+<search_hit hit_rank="8" peptide="VLPAHDASK" peptide_prev_aa="K" peptide_next_aa="V" protein="IPI00178352" num_tot_proteins="3" num_matched_ions="4" calc_neutral_pep_mass="936.502869" massdiff="-0.0443" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=FLNC Isoform 1 of Filamin-C" protein_mw="291112">
+<alternative_protein protein="IPI00413958" protein_descr="Tax_Id=9606 Gene_Symbol=FLNC Isoform 2 of Filamin-C" protein_mw="287373"/>
+<alternative_protein protein="IPI00783128" protein_descr="Tax_Id=9606 Gene_Symbol=FLNC Gamma filamin variant" protein_mw="288784"/>
+<search_score name="ionscore" value="4.92"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.1e+02"/>
+</search_hit>
+<search_hit hit_rank="9" peptide="CLSNTQSK" peptide_prev_aa="K" peptide_next_aa="I" protein="IPI00556434" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.433472" massdiff="+0.0251" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=ZNF721 zinc finger protein 721" protein_mw="106420">
+<modification_info>
+<mod_aminoacid_mass position="1" mass="160.030654"/>
+</modification_info>
+<search_score name="ionscore" value="4.69"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.2e+02"/>
+</search_hit>
+<search_hit hit_rank="10" peptide="DSVEGICSK" peptide_prev_aa="K" peptide_next_aa="I" protein="IPI00014865" num_tot_proteins="1" num_matched_ions="3" calc_neutral_pep_mass="936.422241" massdiff="+0.0364" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=C20orf67 Phosphorylated CTD-interacting factor 1" protein_mw="80618">
+<search_score name="ionscore" value="3.97"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.4e+02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+<spectrum_query spectrum="JP_PM3_0113_10ul_orb1.2149.2149.3.dta" start_scan="0" end_scan="0" precursor_neutral_mass="2440.204782" assumed_charge="3" index="4">
+<search_result search_id="1">
+<search_hit hit_rank="1" peptide="HIYYITGETKDQVANSAFVER" peptide_prev_aa="K" peptide_next_aa="L" protein="IPI00382470" num_tot_proteins="5" num_matched_ions="17" calc_neutral_pep_mass="2440.202271" massdiff="+0.0025" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=HSP90AA1 Heat shock protein HSP 90-alpha 2" protein_mw="98099">
+<alternative_protein protein="IPI00604607" protein_descr="Tax_Id=9606 Gene_Symbol=HSP90AA1 Hsp89-alpha-delta-N" protein_mw="63212"/>
+<alternative_protein protein="IPI00784295" protein_descr="Tax_Id=9606 Gene_Symbol=HSP90AA1 Heat shock protein HSP 90-alpha" protein_mw="84607"/>
+<alternative_protein protein="IPI00789847" protein_descr="Tax_Id=9606 Gene_Symbol=- Protein" protein_mw="90044"/>
+<alternative_protein protein="IPI00796844" protein_descr="Tax_Id=9606 Gene_Symbol=HSP90AA1 Full-length cDNA clone CS0CAP007YF18 of Thymus of Homo sapiens" protein_mw="49327"/>
+<search_score name="ionscore" value="53.72"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="0.0014"/>
+</search_hit>
+<search_hit hit_rank="2" peptide="SYDEQLRLAMELSAQEQEER" peptide_prev_aa="R" peptide_next_aa="R" protein="IPI00167305" num_tot_proteins="2" num_matched_ions="5" calc_neutral_pep_mass="2440.117569" massdiff="+0.0872" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=ANKRD13B Isoform 1 of Ankyrin repeat domain-containing protein 13B" protein_mw="70188">
+<alternative_protein protein="IPI00760874" protein_descr="Tax_Id=9606 Gene_Symbol=ANKRD13B Isoform 2 of Ankyrin repeat domain-containing protein 13B" protein_mw="55022"/>
+<modification_info>
+<mod_aminoacid_mass position="10" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="5.21"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1e+02"/>
+</search_hit>
+<search_hit hit_rank="3" peptide="FTASSILRTHIRQHSGEKPFK" peptide_prev_aa="R" peptide_next_aa="C" protein="IPI00001567" num_tot_proteins="1" num_matched_ions="4" calc_neutral_pep_mass="2439.313492" massdiff="+0.8913" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=PRDM14 PR domain zinc finger protein 14" protein_mw="64021">
+<search_score name="ionscore" value="4.04"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.3e+02"/>
+</search_hit>
+<search_hit hit_rank="4" peptide="FKINPKTGGISVSEVLDYELCK" peptide_prev_aa="K" peptide_next_aa="R" protein="IPI00782990" num_tot_proteins="1" num_matched_ions="10" calc_neutral_pep_mass="2439.271927" massdiff="+0.9329" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=FAT3 similar to fat3" protein_mw="506806">
+<search_score name="ionscore" value="3.69"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.4e+02"/>
+</search_hit>
+<search_hit hit_rank="5" peptide="ISNVEFYHSGQEGFRDSTDPR" peptide_prev_aa="R" peptide_next_aa="Y" protein="IPI00749489" num_tot_proteins="1" num_matched_ions="8" calc_neutral_pep_mass="2440.10437" massdiff="+0.1004" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=PKHD1L1 fibrocystin L" protein_mw="465901">
+<search_score name="ionscore" value="3.44"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.5e+02"/>
+</search_hit>
+<search_hit hit_rank="6" peptide="LHYDKSHDQVWVLSWGTLEK" peptide_prev_aa="K" peptide_next_aa="T" protein="IPI00008087" num_tot_proteins="2" num_matched_ions="5" calc_neutral_pep_mass="2440.217545" massdiff="-0.0128" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=FSTL5 Follistatin-related protein 5 precursor" protein_mw="95690">
+<alternative_protein protein="IPI00745676" protein_descr="Tax_Id=9606 Gene_Symbol=FSTL5 96 kDa protein" protein_mw="95874"/>
+<search_score name="ionscore" value="2.85"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.8e+02"/>
+</search_hit>
+<search_hit hit_rank="7" peptide="NARIAPAAFSGQPQAVIMTSGPLK" peptide_prev_aa="K" peptide_next_aa="R" protein="IPI00102118" num_tot_proteins="3" num_matched_ions="7" calc_neutral_pep_mass="2440.289642" massdiff="-0.0849" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=MLXIP MLX interacting protein" protein_mw="101121">
+<alternative_protein protein="IPI00795813" protein_descr="Tax_Id=9606 Gene_Symbol=MLXIP Mlx interactor alpha" protein_mw="56786"/>
+<alternative_protein protein="IPI00796815" protein_descr="Tax_Id=9606 Gene_Symbol=MLXIP Mlx interactor beta" protein_mw="39783"/>
+<modification_info>
+<mod_aminoacid_mass position="18" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="2.65"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.8e+02"/>
+</search_hit>
+<search_hit hit_rank="8" peptide="HLLGEAEANSMQSNLELLTQVK" peptide_prev_aa="K" peptide_next_aa="S" protein="IPI00744279" num_tot_proteins="1" num_matched_ions="5" calc_neutral_pep_mass="2440.226746" massdiff="-0.0220" num_missed_cleavages="0" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=- Similar to ring finger protein 129" protein_mw="13442">
+<modification_info>
+<mod_aminoacid_mass position="11" mass="147.035404"/>
+</modification_info>
+<search_score name="ionscore" value="2.51"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="1.9e+02"/>
+</search_hit>
+<search_hit hit_rank="9" peptide="DGLQNEKVIVPTDIKIEFINR" peptide_prev_aa="R" peptide_next_aa="L" protein="IPI00017610" num_tot_proteins="3" num_matched_ions="6" calc_neutral_pep_mass="2440.33255" massdiff="-0.1278" num_missed_cleavages="2" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=HMGCLL1 Hypothetical protein DKFZp434G1411" protein_mw="16889">
+<alternative_protein protein="IPI00477259" protein_descr="Tax_Id=9606 Gene_Symbol=HMGCLL1 3-hydroxymethyl-3-methylglutaryl-Coenzyme A lyase-like 1 isoform a" protein_mw="39489"/>
+<alternative_protein protein="IPI00794213" protein_descr="Tax_Id=9606 Gene_Symbol=HMGCLL1 3-hydroxymethyl-3-methylglutaryl-Coenzyme A lyase-like 1 isoform b" protein_mw="36304"/>
+<search_score name="ionscore" value="1.65"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="2.3e+02"/>
+</search_hit>
+<search_hit hit_rank="10" peptide="AAAAEPPVIELGARGGPGGGPAGGGGAAR" peptide_prev_aa="R" peptide_next_aa="D" protein="IPI00376954" num_tot_proteins="3" num_matched_ions="8" calc_neutral_pep_mass="2440.257111" massdiff="-0.0523" num_missed_cleavages="1" is_rejected="0" protein_descr="Tax_Id=9606 Gene_Symbol=TAL1 Isoform PP42-TAL1 of T-cell acute lymphocytic leukemia-1 protein" protein_mw="34249">
+<alternative_protein protein="IPI00471993" protein_descr="Tax_Id=9606 Gene_Symbol=TAL1 Isoform PP39-TAL1 of T-cell acute lymphocytic leukemia-1 protein" protein_mw="31597"/>
+<alternative_protein protein="IPI00747776" protein_descr="Tax_Id=9606 Gene_Symbol=TAL1 TAL-1" protein_mw="34576"/>
+<search_score name="ionscore" value="1.49"/>
+<search_score name="identityscore" value="38"/>
+<search_score name="homologyscore" value="21"/>
+<search_score name="expect" value="2.4e+02"/>
+</search_hit>
+</search_result>
+</spectrum_query>
+</msms_run_summary>
+</msms_pipeline_analysis>
