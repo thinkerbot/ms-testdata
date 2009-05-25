@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "ms-testdata"
-  s.version = "0.0.1"
+  s.version = "0.1.0"
   s.authors = ["John Prince", "Simon Chiang"]
   s.email = "simon.a.chiang@gmail.com"
   s.homepage = "http://rubyforge.org/projects/mspire/"
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary = "A repository of test data used by the mspire libraries."
   s.require_path = "lib"
   s.rubyforge_project = "mspire"
-  s.add_dependency("tap", ">= 0.12.0")
+  s.add_dependency("tap-test", ">= 0.1.0")
   
   # list extra rdoc files like README here.
   s.extra_rdoc_files = %W{
