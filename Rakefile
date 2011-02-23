@@ -22,6 +22,7 @@ library test data with that of another, the mspire test data has been extracted
 into this project.}
   gem.email = "jtprince@gmail.com"
   gem.authors = ["John T. Prince", "Simon Chiang"]
+  gem.rubyforge_project = "mspire"
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
