@@ -1,76 +1,56 @@
+require 'rubygems'
+require 'bundler'
+begin
+  Bundler.setup(:default, :development)
+rescue Bundler::BundlerError => e
+  $stderr.puts e.message
+  $stderr.puts "Run `bundle install` to install missing gems"
+  exit e.status_code
+end
 require 'rake'
+
+require 'jeweler'
+Jeweler::Tasks.new do |gem|
+  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
+  gem.name = "ms-testdata"
+  gem.homepage = "http://github.com/jtprince/ms-testdata"
+  gem.license = "MIT"
+  gem.summary = %Q{A repository of test data used by the mspire libraries}
+  gem.description = %Q{The data used to test the mspire libraries is often large and unwieldly.  To better 
+support multiple libraries, multiple developers, and the inevitable overlap of one
+library test data with that of another, the mspire test data has been extracted
+into this project.}
+  gem.email = "jtprince@gmail.com"
+  gem.authors = ["John T. Prince", "Simon Chiang"]
+  # Include your dependencies below. Runtime dependencies are required when using your gem,
+  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
+  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
+  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+end
+Jeweler::RubygemsDotOrgTasks.new
+
 require 'rake/testtask'
+Rake::TestTask.new(:spec) do |spec|
+  spec.libs << 'lib' << 'spec'
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.verbose = true
+end
+
+require 'rcov/rcovtask'
+Rcov::RcovTask.new do |spec|
+  spec.libs << 'spec'
+  spec.pattern = 'spec/**/*_spec.rb'
+  spec.verbose = true
+end
+
+task :default => :spec
+
 require 'rake/rdoctask'
-require 'rake/gempackagetask'
+Rake::RDocTask.new do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
-#
-# Gem specification
-#
-
-def gemspec
-  data = File.read('ms-testdata.gemspec')
-  spec = nil
-  Thread.new { spec = eval("$SAFE = 3\n#{data}") }.join
-  spec
-end
-
-Rake::GemPackageTask.new(gemspec) do |pkg|
-  pkg.need_tar = true
-end
-
-desc 'Prints the gemspec manifest.'
-task :print_manifest do
-  # collect files from the gemspec, labeling 
-  # with true or false corresponding to the
-  # file existing or not
-  files = gemspec.files.inject({}) do |files, file|
-    files[File.expand_path(file)] = [File.exists?(file), file]
-    files
-  end
-  
-  # gather non-rdoc/pkg files for the project
-  # and add to the files list if they are not
-  # included already (marking by the absence
-  # of a label)
-  Dir.glob("**/*").each do |file|
-    next if file =~ /^(rdoc|pkg)/ || File.directory?(file)
-    
-    path = File.expand_path(file)
-    files[path] = ["", file] unless files.has_key?(path)
-  end
-  
-  # sort and output the results
-  files.values.sort_by {|exists, file| file }.each do |entry| 
-    puts "%-5s %s" % entry
-  end
-end
-
-#
-# Documentation tasks
-#
-
-desc 'Generate documentation.'
-Rake::RDocTask.new(:rdoc) do |rdoc|
-  spec = gemspec
-  
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'ms-testdata'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include( spec.extra_rdoc_files )
-  rdoc.rdoc_files.include( spec.files.select {|file| file =~ /^lib.*\.rb$/} )
+  rdoc.title = "ms-testdata #{version}"
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
-#
-# Test tasks
-#
-
-desc 'Default: Run tests.'
-task :default => :test
-
-desc 'Run tests.'
-Rake::TestTask.new(:test) do |t|
-  t.test_files = Dir.glob( File.join('test', ENV['pattern'] || '**/*_test.rb') )
-  t.verbose = true
-  t.warning = true
-end
-

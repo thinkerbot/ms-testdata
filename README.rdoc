@@ -1,4 +1,4 @@
-= {Ms-Testdata}[http://mspire.rubyforge.org/ms/testdata]
+= Ms-Testdata
 
 A repository of test data used by the mspire libraries.
 
