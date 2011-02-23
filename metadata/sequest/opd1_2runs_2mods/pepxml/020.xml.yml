@@ -1,0 +1,5 @@
+source: John Prince
+description: |
+  This is a reference file on pepxml transformation using mspire 0.4.3 to
+  convert the srf file "sequest/opd1_2runs_2mods/sequest331/020.srf" into
+  pepxml format.
